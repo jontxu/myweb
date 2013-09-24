@@ -1,4 +1,5 @@
 venv
 *.pyc
 static/.webassets-cache/*
-*.less
+static/stylesheets/style.min.css
+static/javascripts/all.min.js

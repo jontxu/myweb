@@ -18,20 +18,24 @@ assets.register('less', less)
 assets.register('js', js)
 
 @app.route('/')
-def hello_world():
-	return render_template('test.html', title='Test')
+def index():
+	return render_template('index.html', title='Jon')
 
-@app.route('/about/')
-def about():
-	return render_template('test.html', title='About me')
+@app.route('/career/')
+def career():
+	return render_template('career.html', title='My career')
+
+@app.route('/projects/')
+def projects():
+	return render_template('projects.html', title='Projects')
 
 @app.route('/tech/')
 def tech():
-	return render_template('test.html', title='Technologies')
+	return render_template('tech.html', title='Technologies')
 
 @app.route('/contact/')
 def contact():
-	return render_template('test.html', title='Contact')
+	return render_template('contact.html', title='Contact')
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
 

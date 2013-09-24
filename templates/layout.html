@@ -14,6 +14,18 @@
         -#}
 	</head>
     <body>
+    <h1>Jon [REDACTED]</h1>
+
+    <div id="pages">
+        <ul id="nav">
+            <li><a href="/">Index</a></li>
+            <li><a href="{{ url_for('career') }}">Career</a></li>
+            <li><a href="{{ url_for('tech') }}">Technologies</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact me</a></li>
+        </ul>
+    </div>
         {% block content%} {% endblock %}
+        <footer>Powered by Flask.</footer>
     </body>
 </html>
