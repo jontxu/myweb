@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %} {% endblock %}</title>
+        {% assets "less" -%}
+            <link rel='stylesheet' type='text/css' href='{{ ASSET_URL }}'/>
+        {% endassets -%} 
+        {% assets "js" -%}
+            <script type='text/javascript' src='{{ ASSET_URL }}'></script>
+        {% endassets -%} 
+        {#
+            {% set test = scripts.push('/javascripts/jquery-1.9.1.min.js', '/javascripts/bootstrap.js') -%}
+            {{ renderScriptsTags(scripts) -}} 
+        -#}
+	</head>
+    <body>
+        {% block content%} {% endblock %}
+    </body>
+</html>
