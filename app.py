@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from flask import Flask, render_template, request, flash
 from flask.ext.assets import Environment, Bundle
 from flask.ext.babel import Babel
@@ -28,7 +30,7 @@ babel = Babel(app)
 assets = Environment(app)
 assets.url = app.static_url_path
 
-less = Bundle('stylesheets/main.less', 'stylesheets/sprites.less', filters='less, cssmin', output='stylesheets/style.min.css')
+less = Bundle('stylesheets/main.less', 'stylesheets/img.less', filters='less, cssmin', output='stylesheets/style.min.css')
 js = Bundle('javascripts/jquery.js', 'javascripts/html5shiv.js', filters='closure_js', output='javascripts/all.min.js')
 
 assets.register('less', less)
@@ -42,9 +44,9 @@ def csrf_error(reason):
 def index():
 	return render_template('index.html', title='Jon')
 
-@app.route('/career/')
-def career():
-	return render_template('career.html', title='My career')
+@app.route('/resume/')
+def resume():
+	return render_template('resume.html', title=u'R\xe9sum\xe9')
 
 @app.route('/projects/')
 def projects():

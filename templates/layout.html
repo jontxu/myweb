@@ -4,7 +4,7 @@
 		<title>{% block title %} {% endblock %}</title>
         {% assets "less" -%}
             <link rel='stylesheet' type='text/css' href='{{ ASSET_URL }}'/>
-        {% endassets -%} 
+        {% endassets -%}
         {% assets "js" -%}
             <script type='text/javascript' src='{{ ASSET_URL }}'></script>
         {% endassets -%} 
@@ -14,18 +14,16 @@
         -#}
 	</head>
     <body>
-    <h1>Jon [REDACTED]</h1>
-
-    <div id="pages">
-        <ul id="nav">
-            <li><a href="/">Index</a></li>
-            <li><a href="{{ url_for('career') }}">Career</a></li>
-            <li><a href="{{ url_for('tech') }}">Technologies</a></li>
-            <li><a href="{{ url_for('projects') }}">Projects</a></li>
-            <li><a href="{{ url_for('contact') }}">Contact</a></li>
-        </ul>
-    </div>
+        <header>
+            <h1><a href="/">Jon Juaristi Campillo</a></h1>
+            <nav>
+                <a class="res" href="{{ url_for('resume') }}">Résumé</a>
+                <a class="tec"  href="{{ url_for('tech') }}">Tech</a>
+                <a class="pro" href="{{ url_for('projects') }}">Projects</a>
+                <a class="con" href="{{ url_for('contact') }}">Contact</a>
+            </nav>
+        </header>
         {% block content%} {% endblock %}
-        <footer>Powered by Flask.</footer>
+        <footer> <a href="">Euskara</a> | <a href="">Español</a> | <a href="">English</a> </footer>
     </body>
 </html>
