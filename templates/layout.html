@@ -16,14 +16,9 @@
     <body>
         <header>
             <h1><a href="/">Jon Juaristi Campillo</a></h1>
-            <nav>
-                <a class="res" href="{{ url_for('resume') }}">Résumé</a>
-                <a class="tec"  href="{{ url_for('tech') }}">Tech</a>
-                <a class="pro" href="{{ url_for('projects') }}">Projects</a>
-                <a class="con" href="{{ url_for('contact') }}">Contact</a>
-            </nav>
+                {% block pages %} {% endblock %}
         </header>
         {% block content%} {% endblock %}
-        <footer> <a href="">Euskara</a> | <a href="">Español</a> | <a href="">English</a> </footer>
+        <footer> Powered by <a href="http://python.org/">Python</a> and <a href="http://flask.pocoo.org/">Flask</a> | Running with <a href="http://gunicorn.org/">gunicorn</a> | Hosted in <a href="http://heroku.com/">Heroku</a> | Source in <a href="https://github.com/jontxu/myweb">GitHub</a> | <abbr title="Copyleft">©</abbr> 2013 <a href="/">Jon Juaristi Campillo</a></footer>
     </body>
 </html>

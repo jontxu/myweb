@@ -1,14 +1,24 @@
 {% extends "layout.html" -%}
 {% block title -%}{{ title -}} {% endblock -%}
+
+{% block pages %}
+<nav>
+		<a class="link" href="{{ url_for('resume') }}">Résumé</a>
+		<a class="link"  href="{{ url_for('tech') }}">Tech</a>
+		<a class="current" href="{{ url_for('projects') }}">Projects</a>
+		<a class="link" href="{{ url_for('contact') }}">Contact</a>
+		</nav>
+	{% endblock %}
+
 {% block content %}
 
-<div id="about" class="wrapper">
+<div id="about" class="projects">
  	<h2>Projects</h2>
 	<div class="proj">
 		<div class="single">
-			<b>NodeQDB</b> <span class="tenure">2013–present</span><br/>
-			A quote database made for fun node.js, with the data stored in CouchDB and manipulated via an ORM. Might use CouchDB as a backup.
-			<center> <div class="techno"><div class="sprite-img-node"></div> <div class="sprite-img-couchdb"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-sass"></div> <div class="sprite-img-compass"></div> <div class="sprite-img-git"></div></center>
+			<b>Frugal</b> <span class="tenure">2013–present</span><br/>
+			A web based personal accounting manager. It can be both self-hosted (for yourself) or for a community. A Knockback frontend (<u>Knock</u>out.js + <u>Back</u>bone.js) interacts with data from a MongoDB RESTful API. 
+			<center> <div class="techno"><div class="sprite-img-python"></div> <div class="sprite-img-gunicorn"></div> <div class="sprite-img-flask"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-mongodb"></div> <div class="sprite-img-knockback"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-less"></div> <div class="sprite-img-git"></div></center>
 		</div>
 		<div class="single">
 			<a href="http://github.com/jontxu/labur"><div class="sprite-img-github"></div></a> <b>Labur</b> <span class="tenure">2013–present</span><br/>
@@ -18,15 +28,15 @@
 		<div class="single">
 			<a href="http://github.com/jontxu/fishbowl"><div class="sprite-img-github"></div></a> <b>Fishbowl</b> <span class="tenure">2013–present</span><br/>
 			A forum system made in node.js, with the data stored in PostgreSQL and manipulated via an ORM. It also has the feature of using Markdown as the marking language for the posts in general.
-			<center> <div class="techno"><div class="sprite-img-node"></div> <div class="sprite-img-postgresql"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-sass"></div> <div class="sprite-img-compass"></div> <div class="sprite-img-git"></div></div></center>
+			<center> <div class="techno"><div class="sprite-img-node"></div> <div class="sprite-img-postgresql"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-sass2"></div> <div class="sprite-img-compass"></div> <div class="sprite-img-git"></div></div></center>
 		</div>
 		<div class="single">
-			<a href="http://github.com/jontxu/myweb"><div class="sprite-img-github"></div></a> <b>Personal website</b> <span class="tenure">Sep–Oct 2013</span><br/>
+			<a href="http://github.com/jontxu/myweb"><div class="sprite-img-github"></div></a> <a class="link" href="/"><b>Personal website</b></a> <span class="tenure">Sep–Oct 2013</span><br/>
 			The website you are looking right now is made in Python using the Flask web microfrawemork, running in the gunicorn web server and deployed on Heroku.
 			<center><div class="techno"> <div class="sprite-img-python"></div> <div class="sprite-img-gunicorn"></div><div class="sprite-img-flask"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-less"></div> <div class="sprite-img-gimp2"></div> <div class="sprite-img-git"></div></div></center>
 		</div>
 		<div class="single">
-			<a href="http://github.com/jontxu/AppGenerator"><div class="sprite-img-github"></div></a> <b>End of degree project</b> <span class="tenure">Jan–June 2013</span><br/>
+			<a href="http://github.com/jontxu/AppGenerator"><div class="sprite-img-github"></div></a> <a class="link" href="https://appgenerator.herokuapp.com"><b>End of degree project</b></a> <span class="tenure">Jan–June 2013</span><br/>
 			The project proposes a platform allowing generation of mobile apps that support different events, seminars or conferences.
 			<center> <div class="techno"><div class="sprite-img-java"></div> <div class="sprite-img-apachecordova2"></div> <div class="sprite-img-node"></div> <div class="sprite-img-postgresql"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-jquerymobile"></div> <div class="sprite-img-stylus"></div> <div class="sprite-img-git"></div></div></center>
 		</div>

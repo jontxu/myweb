@@ -4,29 +4,26 @@ from flask import Flask, render_template, request, flash
 from flask.ext.assets import Environment, Bundle
 from flask.ext.babel import Babel
 from flask_wtf.csrf import CsrfProtect
-from config import LANGUAGES
 from werkzeug.contrib.fixers import ProxyFix
 from contact import ContactForm
 from flask.ext.mail import Message, Mail
+from flask_sslify import SSLify
+import os, config
  
 mail = Mail()
-
 csrf = CsrfProtect()
 app = Flask(__name__)
+sslify = SSLify(app)
 
-app.config['DEBUG'] = True
 app.secret_key = 'thisisakey'
 
-app.config["MAIL_SERVER"] = "smtp.gmail.com"
-app.config["MAIL_PORT"] = 465
-app.config["MAIL_USE_SSL"] = True
-app.config["MAIL_USERNAME"] = 'jonjc22@gmail.com'
-app.config["MAIL_PASSWORD"] = 'pass'
+if os.environ.get('HEROKU') is None:
+  app.config.from_object('config.Development')
+else:
+  app.config.from_object('config.Production')
 
 mail.init_app(app)
-
 csrf.init_app(app)
-babel = Babel(app)
 assets = Environment(app)
 assets.url = app.static_url_path
 
@@ -54,7 +51,7 @@ def projects():
 
 @app.route('/tech/')
 def tech():
-	return render_template('tech.html', title='Technologies')
+	return render_template('tech2.html', title='Technologies')
 
 @app.route('/contact/', methods=['GET', 'POST'])
 def contact():
