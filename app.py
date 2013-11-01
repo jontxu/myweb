@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 app.secret_key = 'thisisakey'
 
-if os.environ.get('HEROKU') is None:
+if os.environ.get('HEROKU') == 0:
   app.config.from_object('config.Development')
 else:
   app.config.from_object('config.Production')
@@ -25,10 +25,10 @@ else:
 mail.init_app(app)
 csrf.init_app(app)
 assets = Environment(app)
-#assets.config['less_run_in_debug'] = True
+assets.config['less_run_in_debug'] = True
 assets.url = app.static_url_path
 
-less = Bundle('stylesheets/main.less', 'stylesheets/img.less', filters='less,cssmin', output='stylesheets/style.min.css')
+less = Bundle('stylesheets/main.less', 'stylesheets/img.less', filters='less,cssmin', output='stylesheets/style.min.css', extra={'rel': 'stylesheet/less' if env.debug else 'stylesheet'})
 js = Bundle('javascripts/jquery.js', 'javascripts/html5shiv.js', 'http://lesscss.googlecode.com/files/less-1.3.0.min.js', filters='closure_js', output='javascripts/all.min.js')
 
 assets.register('less', less)
@@ -76,7 +76,7 @@ def contact():
   elif request.method == 'GET':
     return render_template('contact.html', title='Contact', form=form)
 
-app.wsgi_app = ProxyFix(app.wsgi_app)
+#app.wsgi_app = ProxyFix(app.wsgi_app)
 
 if __name__ == '__main__':
    #port = int(os.environ.get("PORT", 5000))
