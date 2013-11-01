@@ -45,7 +45,7 @@ def favicon():
 
 @app.route('/')
 def index():
-	return render_template('index.html', title='Jon')
+	return render_template('index.html', title='Index')
 
 @app.route('/resume/')
 def resume():

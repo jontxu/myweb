@@ -17,8 +17,8 @@
 
  		<div align="center">
 	 	<div class="techn"><div class="sprite-img-debian"></div> <span>Debian</span></div>
-	 	<div class="techn"><div class="sprite-img-debian"></div> <span>Mint</span></div>
 	 	<div class="techn"><div class="sprite-img-fedora"></div> <span>Fedora </span></div>
+	 	<div class="techn"><div class="sprite-img-mint"></div> <span>Mint</span></div>
 	 	<div class="techn"><div class="sprite-img-ubuntu"></div> <span>Ubuntu</span></div>
 		<!--<div class="techn"><div class="sprite-img-coffeescript"></div> CoffeeScript</span></div>-->
 		<div class="techn"><div class="sprite-img-cpp"></div> <span>C/C++ </span></div>

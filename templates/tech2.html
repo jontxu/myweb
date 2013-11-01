@@ -1,12 +1,12 @@
 {% extends "layout.html" -%}
 {% block title -%}{{ title -}} {% endblock -%}
-{% block pages %}
-<nav>
+	{% block pages %}
+	<nav>
 		<a class="link" href="{{ url_for('resume') }}">Résumé</a>
 		<a class="current"  href="{{ url_for('tech') }}">Tech</a>
 		<a class="link" href="{{ url_for('projects') }}">Projects</a>
 		<a class="link" href="{{ url_for('contact') }}">Contact</a>
-		</nav>
+	</nav>
 	{% endblock %}
 
 {% block content %}
@@ -17,8 +17,8 @@
 
  		<div align="center">
 	 	<div class="techn"><div class="sprite-img-debian"></div> <span>Debian</span></div>
-	 	<div class="techn"><div class="sprite-img-mint"></div> <span>Mint</span></div>
 	 	<div class="techn"><div class="sprite-img-fedora"></div> <span>Fedora </span></div>
+	 	<div class="techn"><div class="sprite-img-mint"></div> <span>Mint</span></div>
 	 	<div class="techn"><div class="sprite-img-ubuntu"></div> <span>Ubuntu</span></div>
 		<!--<div class="techn"><div class="sprite-img-coffeescript"></div> CoffeeScript</span></div>-->
 		<div class="techn"><div class="sprite-img-cpp"></div> <span>C/C++ </span></div>
