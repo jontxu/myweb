@@ -10,7 +10,7 @@ class Production(Config):
     MAIL_PASSWORD = 'jotakarratu'
 
 class Development(Config):
-    DEBUG = True
+    DEBUG = False
     MAIL_PASSWORD = 'lol'
         
 class Testing(Config):

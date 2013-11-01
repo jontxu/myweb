@@ -13,7 +13,7 @@
 
 	{% block content -%}
 	<div id="about" class="wrapper">
-	 <h2>About me</h2>
+	 <h2>About</h2>
 	 	<img src="/static/images/fotoCV.jpg" class="photo" title="Circa november 2012" />
 	 	<center><h4>Disclaimer: not related to the <a href="http://en.wikipedia.com/wiki/Jon_Juaristi">homonymous writer</a></h4></center>
 		<p>Hi! I'm a 23 year old computer engineer that loves everything related with them. I'm a native of the <a href="http://en.wikipedia.org/wiki/Basque_Country_(greater_region)">Basque Country</a>, exactly from the town of <a href="http://goo.gl/maps/1n9Fm">Lekeitio</a>, in Biscay. Thus, I am a native speaker of both Basque and Spanish. I can also speak English fluently on an advanced level.</p>

@@ -3,7 +3,7 @@
 	<head>
 		<title>{% block title %} {% endblock %}</title>
         {% assets "less" -%}
-             <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+            <link rel="{{ EXTRA.rel }}" type="text/css" href="{{ ASSET_URL }}">
         {% endassets -%}
         {% assets "js" -%}
             <script type='text/javascript' src='{{ ASSET_URL }}'></script>
