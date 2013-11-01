@@ -15,11 +15,22 @@
   padding: 0px; }
 
   h2, h3, h4, p {
-  margin-bottom: 16px; }
+	margin-bottom: 16px; 
+}
 
 p {
-  line-height: 22px; }
+  line-height: 22px; 
+}
 
+abbr {
+	position: relative;
+	border-bottom: 1px dotted;
+	&[title]:hover::after {
+		cursor: help;
+		content: " (" attr(title) ") ";
+		border-bottom: 1px dotted #ffffff;
+	}
+}
 
 body {
   font: 14px @font-style;
@@ -203,7 +214,7 @@ img.photo {
 }
 
 .techn {
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: bold;
 	background: #f4f4f4;
   border: 1px solid #ccc;
