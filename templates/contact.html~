@@ -45,21 +45,21 @@
 			    {{ form.csrf_token }}
  
 		    	{{ form.submit }}
-  		</form>
-		{% endif %}
-  		</div>
-  		<div id="othercontact">
-  			<p>You can contact me via these methods:</p>
-  			<div class="nets"><div class="sprite-img-mail"></div> <span><a href="mailto:jonjc22@gmail.com">Email</a></span></div>
-  			<div class="nets"><div class="sprite-img-skype"></div> <span><a href="skype:jjontx?call">Skype</a></span></div>
-  			<p>You can also find me in these social networks:</p>
-  			<div class="nets"><div class="sprite-img-facebook"></div> <span><a href="https://facebook.com/j0ntxu.jc">Facebook</a></span></div>
-  			<div class="nets"><div class="sprite-img-google"></div> <span><a href="https://plus.google.com/u/0/115157064125546724766">Google+</a></span></div>
-	  		<div class="nets"><div class="sprite-img-linkedin"></div> <span><a href="http://linkedin.com/in/jonjc">Linkedin</a></span></div>
-	  		<div class="nets"><div class="sprite-img-reddit"></div> <span><a href="http://reddit.com/user/jonwho">Reddit</a></span></div>
-	  		<div class="nets"><div class="sprite-img-twitter"></div> <span><a href="https://twitter.com/jonwho">Twitter</a></span></div>
-	  		<div class="nets"><div class="sprite-img-youtube"></div> <span><a href="http://youtube.com/cuser/jotilla22">Youtube</a></span></div>
-  		</div>
-	</div>
+  			</form>
+			{% endif %}
+  			</div>
+  			<div id="othercontact">
+  				<p>You can contact me via these methods:</p>
+  				<div class="nets"><div class="sprite-img-mail"></div> <span><a href="mailto:jonjc22@gmail.com">Email</a></span></div>
+  				<div class="nets"><div class="sprite-img-skype"></div> <span><a href="skype:jjontx?call">Skype</a></span></div>
+  				<p>You can also find me in these social networks:</p>
+  				<div class="nets"><div class="sprite-img-facebook"></div> <span><a href="https://facebook.com/j0ntxu.jc">Facebook</a></span></div>
+  				<div class="nets"><div class="sprite-img-google"></div> <span><a href="https://plus.google.com/u/0/115157064125546724766">Google+</a></span></div>
+	  			<div class="nets"><div class="sprite-img-linkedin"></div> <span><a href="http://linkedin.com/in/jonjc">Linkedin</a></span></div>
+	  			<div class="nets"><div class="sprite-img-reddit"></div> <span><a href="http://reddit.com/user/jonwho">Reddit</a></span></div>
+	  			<div class="nets"><div class="sprite-img-twitter"></div> <span><a href="https://twitter.com/jonwho">Twitter</a></span></div>
+	  			<div class="nets"><div class="sprite-img-youtube"></div> <span><a href="http://youtube.com/cuser/jotilla22">Youtube</a></span></div>
+  			</div>
+		</div>
 {% endblock %}
 
