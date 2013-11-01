@@ -67,11 +67,7 @@ def contact():
       flash('All fields are required.')
       return render_template('contact.html', form=form)
     else:
-      msg = Message(form.subject.data, sender=form.email.data, recipients=app.config["MAIL_USERNAME"] )
-      msg.body = """
-      From: %s &lt;%s&gt;
-      %s
-      """ % (form.name.data, form.email.data, form.message.data)
+      msg = Message(subject=form.subject.data, sender=form.email.data, body=form.message.data, recipients=app.config["MAIL_USERNAME"])
       mail.send(msg)
       return render_template('contact.html', title='Contact', success=True)
   elif request.method == 'GET':
