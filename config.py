@@ -7,11 +7,11 @@ class Config(object):
 
 class Production(Config):
     DEBUG = True
-    MAIL_PASSWORD = 'jotakarratu'
+    MAIL_PASSWORD = 'brem zeca tivu czzt'
 
 class Development(Config):
     DEBUG = True
-    MAIL_PASSWORD = 'brem zeca tivu czzt'
+    MAIL_PASSWORD = 'lol'
         
 class Testing(Config):
     TESTING = True
