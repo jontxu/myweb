@@ -3,7 +3,7 @@ class Config(object):
     MAIL_SERVER = "smtp.gmail.com"
     MAIL_PORT = 465
     MAIL_USE_SSL = True
-    MAIL_USERNAME = 'jonjc22@gmail.com'
+    #MAIL_USERNAME = 'jonjc22@gmail.com'
 
 class Production(Config):
     DEBUG = True
@@ -11,7 +11,7 @@ class Production(Config):
 
 class Development(Config):
     DEBUG = True
-    MAIL_PASSWORD = 'lolt'
+    MAIL_PASSWORD = 'lol'
         
 class Testing(Config):
     TESTING = True

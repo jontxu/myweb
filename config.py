@@ -3,7 +3,8 @@ class Config(object):
     MAIL_SERVER = "smtp.gmail.com"
     MAIL_PORT = 465
     MAIL_USE_SSL = True
-    MAIL_USERNAME = 'jonjc22@gmail.com'
+    #MAIL_USERNAME = 'jonjc22@gmail.com'
+    ADMINS = ['jonjc22@gmail.com']
 
 class Production(Config):
     DEBUG = True
