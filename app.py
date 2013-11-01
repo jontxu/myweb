@@ -57,7 +57,7 @@ def projects():
 
 @app.route('/tech/')
 def tech():
-	return render_template('tech2.html', title='Technologies')
+	return render_template('tech.html', title='Technologies')
 
 @app.route('/contact/', methods=['GET', 'POST'])
 def contact():

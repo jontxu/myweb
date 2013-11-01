@@ -64,7 +64,7 @@
 	<div align="center">
 		<div class="techn"><div class="sprite-img-apachecordova2"></div> <span>PhoneGap</span></div>
 		<div class="techn"><div class="sprite-img-jquerymobile"></div> <span>jQuery</span></div>
-	</div>
+	</div
 		
 	<h4>CSS preprocessors:</h4>
 	<div align="center">
