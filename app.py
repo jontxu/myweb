@@ -20,10 +20,8 @@ app.secret_key = 'thisisakey'
 
 if os.environ.get('HEROKU') is None:
   app.config.from_object('config.Development')
-  print 0
 else:
   app.config.from_object('config.Production')
-  print 1
 
 mail.init_app(app)
 csrf.init_app(app)
@@ -43,7 +41,7 @@ def csrf_error(reason):
 
 @app.route('/favicon.ico')
 def favicon():
-    return send_from_directory(os.path.join(app.static_url_path), 'ico/favicon.ico')
+    return send_from_directory(os.path.join(app.static_url_path, 'ico/favicon.ico'))
 
 @app.route('/')
 def index():
