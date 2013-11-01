@@ -106,35 +106,30 @@ header {
 
 div.exp, div.proj {
 	padding-left: 1em;
-	p {
-		margin-left: 1em;
-		padding-bottom: 1em;
-    border-bottom: 1px solid #eee;
-    &:last-child {
-      border-bottom: none;
-    }
-	}
+	display: block;
 	div.single {
+		line-height: 22px;
 		margin-left: 1em;
 		margin-top: 1em;
-    border-bottom: 1px solid #eee;
-    &:last-child {
-      border-bottom: none;
-    }
+		padding-bottom: 1em;
+		border-bottom: 1px solid #eee;
+		
+		&:last-child {
+			border-bottom: none;
+		}
 	}
-  span.title {
-    vertical-align: middle;
-    float: left;
-    font-weight: bold;
-    display: inline-block;
-  }
+	span.title {
+		vertical-align: middle;
+		font-weight: bold;
+		display: inline-block;
+	}
 	span.tenure {
 		float: right;
 	}
-  div.techno {
-    display: inline-table;
-    margin: 1em;
-  }
+	div.techno {
+		display: inline-table;
+		margin-top: 1em;
+	}
 }
 
 img.photo {
@@ -200,7 +195,7 @@ img.photo {
   margin-right: 2em;
   margin-bottom: 1em;
   vertical-align: middle;
-  width: 130px;
+  width: 135px;
   line-height: 22px;
    -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
