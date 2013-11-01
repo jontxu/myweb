@@ -11,7 +11,7 @@ class Production(Config):
 
 class Development(Config):
     DEBUG = True
-    MAIL_PASSWORD = 'lol'
+    MAIL_PASSWORD = 'brem zeca tivu czzt'
         
 class Testing(Config):
     TESTING = True
