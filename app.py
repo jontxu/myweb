@@ -41,7 +41,7 @@ def csrf_error(reason):
 
 @app.route('/favicon.ico')
 def favicon():
-    return send_from_directory(os.path.join(app.static_url_path, 'ico'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+    return send_from_directory(os.path.join(app.root_path, 'static/ico'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @app.route('/')
 def index():
