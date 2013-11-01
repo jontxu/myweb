@@ -180,7 +180,7 @@ img.photo {
   }
 }
 
-.tecnologies {
+.tecnologies, .projects {
   padding: 10px 2em;
 }
 
