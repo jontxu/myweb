@@ -6,15 +6,15 @@ from flask import Flask, render_template, request, flash
 from flask.ext.assets import Environment, Bundle
 from flask.ext.babel import Babel
 from flask_wtf.csrf import CsrfProtect
-#from werkzeug.contrib.fixers import ProxyFix
+from werkzeug.contrib.fixers import ProxyFix
 from contact import ContactForm
 from flask.ext.mail import Message, Mail
-#from flask_sslify import SSLify
+from flask_sslify import SSLify
 
 mail = Mail()
 csrf = CsrfProtect()
 app = Flask(__name__)
-#sslify = SSLify(app)
+sslify = SSLify(app)
 
 app.secret_key = 'thisisakey'
 
@@ -79,7 +79,7 @@ def contact():
   elif request.method == 'GET':
     return render_template('contact.html', title='Contact', form=form)
 
-#app.wsgi_app = ProxyFix(app.wsgi_app)
+app.wsgi_app = ProxyFix(app.wsgi_app)
 
 if __name__ == '__main__':
    port = int(os.environ.get("PORT", 5000))
