@@ -200,7 +200,7 @@ img.photo {
   margin-right: 2em;
   margin-bottom: 1em;
   vertical-align: middle;
-  width: 135px;
+  width: 130px;
   line-height: 22px;
    -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
