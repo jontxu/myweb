@@ -36,7 +36,7 @@
 			<center><div class="techno"> <div class="sprite-img-python"></div> <div class="sprite-img-gunicorn"></div><div class="sprite-img-flask"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-less"></div> <div class="sprite-img-gimp2"></div> <div class="sprite-img-git"></div></div></center>
 		</div>
 		<div class="single">
-			<div><a href="http://github.com/jontxu/AppGenerator"><div class="sprite-img-github"></div></a> <a class="link" href="https://appgenerator.herokuapp.com"><span class="title">End of degree project</span></a> <span class="tenure">Jan–June 2013</span></div>
+			<div><a href="http://github.com/jontxu/AppGenerator"><div class="sprite-img-github"></div></a><span class="title"><a class="link" href="https://appgenerator.herokuapp.com">End of degree project</span></a> <span class="tenure">Jan–June 2013</span></div>
 			The project proposes a platform allowing generation of mobile apps that support different events, seminars or conferences.
 			<center> <div class="techno"><div class="sprite-img-java"></div> <div class="sprite-img-apachecordova2"></div> <div class="sprite-img-node"></div> <div class="sprite-img-postgresql"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-jquerymobile"></div> <div class="sprite-img-stylus"></div> <div class="sprite-img-git"></div></div></center>
 		</div>
