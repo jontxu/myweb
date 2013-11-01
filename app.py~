@@ -2,7 +2,7 @@
 
 import os
 import config
-from flask import Flask, render_template, request, flash
+from flask import Flask, render_template, request, flash, send_from_directory
 from flask.ext.assets import Environment, Bundle
 from flask.ext.babel import Babel
 from flask_wtf.csrf import CsrfProtect
@@ -41,11 +41,11 @@ def csrf_error(reason):
 
 @app.route('/favicon.ico')
 def favicon():
-    return send_from_directory(os.path.join(app.static_url_path, 'ico/favicon.ico'))
+    return send_from_directory(os.path.join(app.root_path, 'static/ico'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @app.route('/')
 def index():
-	return render_template('index.html', title='Jon')
+	return render_template('index.html', title='Index')
 
 @app.route('/resume/')
 def resume():
