@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import os, config
 from flask import Flask, render_template, request, flash
 from flask.ext.assets import Environment, Bundle
 from flask.ext.babel import Babel
@@ -9,6 +8,7 @@ from werkzeug.contrib.fixers import ProxyFix
 from contact import ContactForm
 from flask.ext.mail import Message, Mail
 #from flask_sslify import SSLify
+import os, config
 
 mail = Mail()
 csrf = CsrfProtect()
