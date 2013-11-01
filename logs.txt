@@ -1,76 +1,78 @@
-2013-11-01T00:04:44.894666+00:00 heroku[api]: Enable Logplex by jon.jc22@gmail.com
-2013-11-01T00:04:44.909594+00:00 heroku[api]: Release v2 created by jon.jc22@gmail.com
-2013-11-01T00:05:02+00:00 heroku[slug-compiler]: Slug compilation started
-2013-11-01T00:06:05.100414+00:00 heroku[api]: Scale to web=1 by jon.jc22@gmail.com
-2013-11-01T00:06:05.138026+00:00 heroku[api]: Deploy 87ed4a7 by jon.jc22@gmail.com
-2013-11-01T00:06:05.173469+00:00 heroku[api]: Release v3 created by jon.jc22@gmail.com
-2013-11-01T00:06:05+00:00 heroku[slug-compiler]: Slug compilation finished
-2013-11-01T00:06:10.747399+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
-2013-11-01T00:06:11.398177+00:00 app[web.1]: 2013-11-01 00:06:11 [2] [INFO] Using worker: sync
-2013-11-01T00:06:11.397007+00:00 app[web.1]: 2013-11-01 00:06:11 [2] [INFO] Starting gunicorn 18.0
-2013-11-01T00:06:11.398027+00:00 app[web.1]: 2013-11-01 00:06:11 [2] [INFO] Listening at: http://0.0.0.0:25260 (2)
-2013-11-01T00:06:11.404423+00:00 app[web.1]: 2013-11-01 00:06:11 [7] [INFO] Booting worker with pid: 7
-2013-11-01T00:06:12.081005+00:00 heroku[web.1]: State changed from starting to up
-2013-11-01T00:06:35.396524+00:00 heroku[router]: at=info method=GET path=/ host=evil-phantom-8894.herokuapp.com fwd="85.87.132.23" dyno=web.1 connect=3ms service=136ms status=500 bytes=135
-2013-11-01T00:06:35.352501+00:00 app[web.1]: 2013-11-01 00:06:35 [7] [ERROR] Error handling request
-2013-11-01T00:06:35.352501+00:00 app[web.1]:     return self.wsgi_app(environ, start_response)
-2013-11-01T00:06:35.352501+00:00 app[web.1]: Traceback (most recent call last):
-2013-11-01T00:06:35.352501+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
-2013-11-01T00:06:35.352501+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/werkzeug/contrib/fixers.py", line 144, in __call__
-2013-11-01T00:06:35.352501+00:00 app[web.1]:     return self.app(environ, start_response)
-2013-11-01T00:06:35.352501+00:00 app[web.1]:     response = self.make_response(self.handle_exception(e))
-2013-11-01T00:06:35.352501+00:00 app[web.1]:     respiter = self.wsgi(environ, resp.start_response)
-2013-11-01T00:06:35.352501+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 131, in handle_request
-2013-11-01T00:06:35.352501+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
-2013-11-01T00:06:35.352675+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
-2013-11-01T00:06:35.352675+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
-2013-11-01T00:06:35.352675+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
-2013-11-01T00:06:35.352675+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
-2013-11-01T00:06:35.352675+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
-2013-11-01T00:06:35.352675+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
-2013-11-01T00:06:35.352675+00:00 app[web.1]:     rv = self.dispatch_request()
-2013-11-01T00:06:35.352833+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
-2013-11-01T00:06:35.352833+00:00 app[web.1]:     return self.view_functions[rule.endpoint](**req.view_args)
-2013-11-01T00:06:35.352833+00:00 app[web.1]:   File "/app/app.py", line 45, in index
-2013-11-01T00:06:35.352833+00:00 app[web.1]:     context, ctx.app)
-2013-11-01T00:06:35.352833+00:00 app[web.1]:     return render_template('index.html', title='Jon')
-2013-11-01T00:06:35.352833+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
-2013-11-01T00:06:35.352833+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
-2013-11-01T00:06:35.353223+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
-2013-11-01T00:06:35.352833+00:00 app[web.1]:     return self.environment.handle_exception(exc_info, True)
-2013-11-01T00:06:35.353223+00:00 app[web.1]:     {% assets "less" -%}
-2013-11-01T00:06:35.353223+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/ext/jinja2.py", line 181, in _render_assets
-2013-11-01T00:06:35.352675+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
-2013-11-01T00:06:35.352675+00:00 app[web.1]:     response = self.full_dispatch_request()
-2013-11-01T00:06:35.352675+00:00 app[web.1]:     rv = self.handle_user_exception(e)
-2013-11-01T00:06:35.352833+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
-2013-11-01T00:06:35.352833+00:00 app[web.1]:     rv = template.render(context)
-2013-11-01T00:06:35.353223+00:00 app[web.1]:     urls = bundle.urls(env=env)
-2013-11-01T00:06:35.353223+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/bundle.py", line 681, in urls
-2013-11-01T00:06:35.353389+00:00 app[web.1]:     force, disable_cache=disable_cache, extra_filters=extra_filters)
-2013-11-01T00:06:35.353223+00:00 app[web.1]:     urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
-2013-11-01T00:06:35.353389+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/bundle.py", line 423, in _merge_and_apply
-2013-11-01T00:06:35.353389+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/bundle.py", line 498, in _build
-2013-11-01T00:06:35.353389+00:00 app[web.1]:     *args, **kwargs)
-2013-11-01T00:06:35.353223+00:00 app[web.1]:   File "/app/templates/index.html", line 1, in top-level template code
-2013-11-01T00:06:35.353389+00:00 app[web.1]:     content = func().getvalue()
-2013-11-01T00:06:35.353389+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/merge.py", line 216, in _wrap_cache
-2013-11-01T00:06:35.353687+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/merge.py", line 249, in func
-2013-11-01T00:06:35.353223+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
-2013-11-01T00:06:35.353223+00:00 app[web.1]:     {% extends "layout.html" -%}
-2013-11-01T00:06:35.353223+00:00 app[web.1]:   File "/app/templates/layout.html", line 5, in top-level template code
-2013-11-01T00:06:35.353389+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/merge.py", line 269, in apply
-2013-11-01T00:06:35.353389+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/bundle.py", line 643, in _urls
-2013-11-01T00:06:35.353389+00:00 app[web.1]:     kwargs=item_data)
-2013-11-01T00:06:35.353687+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/filter/__init__.py", line 481, in subprocess
-2013-11-01T00:06:35.353687+00:00 app[web.1]:     stderr=subprocess.PIPE)
-2013-11-01T00:06:35.353687+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/subprocess.py", line 679, in __init__
-2013-11-01T00:06:35.353687+00:00 app[web.1]:     raise child_exception
-2013-11-01T00:06:35.353846+00:00 app[web.1]: OSError: [Errno 2] No such file or directory
-2013-11-01T00:06:35.353687+00:00 app[web.1]:     self.subprocess([self.less or 'lessc', '-'], out, in_)
-2013-11-01T00:06:35.353687+00:00 app[web.1]:     getattr(filter, type)(data, out, **kwargs_final)
-2013-11-01T00:06:35.353687+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/filter/less.py", line 83, in input
-2013-11-01T00:06:35.353389+00:00 app[web.1]:     return self._wrap_cache(key, func)
-2013-11-01T00:06:35.353687+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/subprocess.py", line 1249, in _execute_child
-2013-11-01T00:06:35.353687+00:00 app[web.1]:     errread, errwrite)
-2013-11-01T00:06:35.955133+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=evil-phantom-8894.herokuapp.com fwd="85.87.132.23" dyno=web.1 connect=1ms service=24ms status=404 bytes=233
+2013-11-01T00:09:24.812938+00:00 heroku[api]: Enable Logplex by jon.jc22@gmail.com
+2013-11-01T00:09:24.843961+00:00 heroku[api]: Release v2 created by jon.jc22@gmail.com
+2013-11-01T00:09:41+00:00 heroku[slug-compiler]: Slug compilation started
+2013-11-01T00:09:47.711411+00:00 heroku[router]: at=info code= desc="Blank app" method=GET path=/ host=wicked-broomstick-7410.herokuapp.com fwd="85.87.132.23" dyno= connect= service= status=502 bytes=
+2013-11-01T00:09:48.114430+00:00 heroku[router]: at=info code= desc="Blank app" method=GET path=/favicon.ico host=wicked-broomstick-7410.herokuapp.com fwd="85.87.132.23" dyno= connect= service= status=502 bytes=
+2013-11-01T00:11:03.728020+00:00 heroku[api]: Scale to web=1 by jon.jc22@gmail.com
+2013-11-01T00:11:03.768862+00:00 heroku[api]: Deploy 87ed4a7 by jon.jc22@gmail.com
+2013-11-01T00:11:03.794155+00:00 heroku[api]: Release v3 created by jon.jc22@gmail.com
+2013-11-01T00:11:03+00:00 heroku[slug-compiler]: Slug compilation finished
+2013-11-01T00:11:10.204082+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2013-11-01T00:11:11.856494+00:00 app[web.1]: 2013-11-01 00:11:11 [2] [INFO] Starting gunicorn 18.0
+2013-11-01T00:11:11.857270+00:00 app[web.1]: 2013-11-01 00:11:11 [2] [INFO] Listening at: http://0.0.0.0:21071 (2)
+2013-11-01T00:11:11.857444+00:00 app[web.1]: 2013-11-01 00:11:11 [2] [INFO] Using worker: sync
+2013-11-01T00:11:11.865407+00:00 app[web.1]: 2013-11-01 00:11:11 [7] [INFO] Booting worker with pid: 7
+2013-11-01T00:11:12.198536+00:00 heroku[web.1]: State changed from starting to up
+2013-11-01T00:11:19.966728+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1836, in __call__
+2013-11-01T00:11:19.966728+00:00 app[web.1]:     return self.wsgi_app(environ, start_response)
+2013-11-01T00:11:19.966728+00:00 app[web.1]:     response = self.make_response(self.handle_exception(e))
+2013-11-01T00:11:19.966939+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1403, in handle_exception
+2013-11-01T00:11:19.966939+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
+2013-11-01T00:11:19.966728+00:00 app[web.1]: 2013-11-01 00:11:19 [7] [ERROR] Error handling request
+2013-11-01T00:11:19.966728+00:00 app[web.1]: Traceback (most recent call last):
+2013-11-01T00:11:19.966728+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 131, in handle_request
+2013-11-01T00:11:19.966728+00:00 app[web.1]:     respiter = self.wsgi(environ, resp.start_response)
+2013-11-01T00:11:19.966939+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+2013-11-01T00:11:19.966939+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+2013-11-01T00:11:19.966939+00:00 app[web.1]:     rv = self.dispatch_request()
+2013-11-01T00:11:19.967098+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+2013-11-01T00:11:19.966939+00:00 app[web.1]:     rv = self.handle_user_exception(e)
+2013-11-01T00:11:19.966939+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+2013-11-01T00:11:19.966939+00:00 app[web.1]:     response = self.full_dispatch_request()
+2013-11-01T00:11:19.966728+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/werkzeug/contrib/fixers.py", line 144, in __call__
+2013-11-01T00:11:19.966728+00:00 app[web.1]:     return self.app(environ, start_response)
+2013-11-01T00:11:19.966728+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1820, in wsgi_app
+2013-11-01T00:11:19.967098+00:00 app[web.1]:     return self.view_functions[rule.endpoint](**req.view_args)
+2013-11-01T00:11:19.967098+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+2013-11-01T00:11:19.967098+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+2013-11-01T00:11:19.967098+00:00 app[web.1]:     context, ctx.app)
+2013-11-01T00:11:19.966939+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+2013-11-01T00:11:19.967532+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+2013-11-01T00:11:19.967098+00:00 app[web.1]:     return render_template('index.html', title='Jon')
+2013-11-01T00:11:19.966939+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
+2013-11-01T00:11:19.967098+00:00 app[web.1]:   File "/app/app.py", line 45, in index
+2013-11-01T00:11:19.967098+00:00 app[web.1]:     return self.environment.handle_exception(exc_info, True)
+2013-11-01T00:11:19.967532+00:00 app[web.1]:     {% assets "less" -%}
+2013-11-01T00:11:19.967532+00:00 app[web.1]:   File "/app/templates/index.html", line 1, in top-level template code
+2013-11-01T00:11:19.967532+00:00 app[web.1]:     {% extends "layout.html" -%}
+2013-11-01T00:11:19.967532+00:00 app[web.1]:   File "/app/templates/layout.html", line 5, in top-level template code
+2013-11-01T00:11:19.967098+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+2013-11-01T00:11:19.967532+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
+2013-11-01T00:11:19.967532+00:00 app[web.1]:     urls.extend(bundle._urls(env, extra_filters, *args, **kwargs))
+2013-11-01T00:11:19.967098+00:00 app[web.1]:     rv = template.render(context)
+2013-11-01T00:11:19.967700+00:00 app[web.1]:     *args, **kwargs)
+2013-11-01T00:11:19.967700+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/bundle.py", line 498, in _build
+2013-11-01T00:11:19.967700+00:00 app[web.1]:     force, disable_cache=disable_cache, extra_filters=extra_filters)
+2013-11-01T00:11:19.967700+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/bundle.py", line 423, in _merge_and_apply
+2013-11-01T00:11:19.967700+00:00 app[web.1]:     kwargs=item_data)
+2013-11-01T00:11:19.967700+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/bundle.py", line 643, in _urls
+2013-11-01T00:11:19.967532+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/bundle.py", line 681, in urls
+2013-11-01T00:11:19.967532+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/ext/jinja2.py", line 181, in _render_assets
+2013-11-01T00:11:19.967532+00:00 app[web.1]:     urls = bundle.urls(env=env)
+2013-11-01T00:11:19.968003+00:00 app[web.1]:     getattr(filter, type)(data, out, **kwargs_final)
+2013-11-01T00:11:19.967700+00:00 app[web.1]:     content = func().getvalue()
+2013-11-01T00:11:19.968003+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/filter/less.py", line 83, in input
+2013-11-01T00:11:19.967700+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/merge.py", line 216, in _wrap_cache
+2013-11-01T00:11:19.968003+00:00 app[web.1]:     self.subprocess([self.less or 'lessc', '-'], out, in_)
+2013-11-01T00:11:19.967700+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/merge.py", line 269, in apply
+2013-11-01T00:11:19.967700+00:00 app[web.1]:     return self._wrap_cache(key, func)
+2013-11-01T00:11:19.968003+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/merge.py", line 249, in func
+2013-11-01T00:11:19.968003+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/webassets/filter/__init__.py", line 481, in subprocess
+2013-11-01T00:11:19.968003+00:00 app[web.1]:     raise child_exception
+2013-11-01T00:11:19.968003+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/subprocess.py", line 1249, in _execute_child
+2013-11-01T00:11:19.968003+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/subprocess.py", line 679, in __init__
+2013-11-01T00:11:19.968003+00:00 app[web.1]:     stderr=subprocess.PIPE)
+2013-11-01T00:11:19.968003+00:00 app[web.1]:     errread, errwrite)
+2013-11-01T00:11:19.968146+00:00 app[web.1]: OSError: [Errno 2] No such file or directory
+2013-11-01T00:11:20.495987+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=wicked-broomstick-7410.herokuapp.com fwd="85.87.132.23" dyno=web.1 connect=1ms service=20ms status=404 bytes=233
+2013-11-01T00:11:19.958271+00:00 heroku[router]: at=info method=GET path=/ host=wicked-broomstick-7410.herokuapp.com fwd="85.87.132.23" dyno=web.1 connect=1ms service=49ms status=500 bytes=135
