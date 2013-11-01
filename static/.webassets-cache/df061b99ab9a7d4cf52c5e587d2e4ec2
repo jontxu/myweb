@@ -1,0 +1,31 @@
+body {
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-right: 14em;
+  margin-left: 14em;
+  margin-top: 5em;
+  background-color: gray;
+}
+h1 {
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-style: bold;
+}
+p {
+  text-align: justify;
+  text-size: 14px;
+  font: "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+#main-container {
+  display: block;
+  min-height: 400px;
+  padding-top: 5em;
+}
+#main-container2 {
+  display: block;
+  min-height: 500px;
+  padding-top: 1em;
+}

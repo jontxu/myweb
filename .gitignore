@@ -1,6 +1,5 @@
 venv
 *.pyc
-static/.webassets-cache/*
 static/stylesheets/img
 static/stylesheets/output
 build

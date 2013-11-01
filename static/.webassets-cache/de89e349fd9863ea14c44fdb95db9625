@@ -1,0 +1,226 @@
+/* glue: 0.3 hash: 09248ee0e8 */
+.sprite-img-stylus,
+.sprite-img-sass,
+.sprite-img-ruby,
+.sprite-img-redis,
+.sprite-img-python,
+.sprite-img-postgresql,
+.sprite-img-oracle,
+.sprite-img-node1,
+.sprite-img-node,
+.sprite-img-mysql,
+.sprite-img-linkedin1,
+.sprite-img-less,
+.sprite-img-json,
+.sprite-img-js,
+.sprite-img-jquerymobile,
+.sprite-img-jquery,
+.sprite-img-jinja,
+.sprite-img-java,
+.sprite-img-inuitcss,
+.sprite-img-inkscape,
+.sprite-img-html5,
+.sprite-img-gunicorn,
+.sprite-img-github,
+.sprite-img-git,
+.sprite-img-gimp2,
+.sprite-img-flask,
+.sprite-img-fedora,
+.sprite-img-django,
+.sprite-img-debian,
+.sprite-img-css,
+.sprite-img-cpp,
+.sprite-img-couchdb,
+.sprite-img-compass,
+.sprite-img-coffeescript,
+.sprite-img-apachecordova2,
+.sprite-img-apachecordova,
+.sprite-img-angularjs {
+  background-image: url('img.png');
+  background-repeat: no-repeat;
+}
+.sprite-img-stylus {
+  background-position: 0px 0px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-sass {
+  background-position: -30px 0px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-ruby {
+  background-position: 0px -30px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-redis {
+  background-position: -30px -30px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-python {
+  background-position: -60px 0px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-postgresql {
+  background-position: -60px -30px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-oracle {
+  background-position: 0px -60px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-node1 {
+  background-position: -30px -60px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-node {
+  background-position: -60px -60px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-mysql {
+  background-position: -90px 0px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-linkedin1 {
+  background-position: -90px -30px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-less {
+  background-position: -90px -60px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-json {
+  background-position: 0px -90px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-js {
+  background-position: -30px -90px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-jquerymobile {
+  background-position: -60px -90px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-jquery {
+  background-position: -90px -90px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-jinja {
+  background-position: -120px 0px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-java {
+  background-position: -120px -30px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-inuitcss {
+  background-position: -120px -60px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-inkscape {
+  background-position: -120px -90px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-html5 {
+  background-position: 0px -120px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-gunicorn {
+  background-position: -30px -120px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-github {
+  background-position: -60px -120px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-git {
+  background-position: -90px -120px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-gimp2 {
+  background-position: -120px -120px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-flask {
+  background-position: -150px 0px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-fedora {
+  background-position: -150px -30px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-django {
+  background-position: -150px -60px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-debian {
+  background-position: -150px -90px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-css {
+  background-position: -150px -120px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-cpp {
+  background-position: 0px -150px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-couchdb {
+  background-position: -30px -150px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-compass {
+  background-position: -60px -150px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-coffeescript {
+  background-position: -90px -150px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-apachecordova2 {
+  background-position: -120px -150px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-apachecordova {
+  background-position: -150px -150px;
+  width: 30px;
+  height: 30px;
+}
+.sprite-img-angularjs {
+  background-position: -180px 0px;
+  width: 30px;
+  height: 30px;
+}

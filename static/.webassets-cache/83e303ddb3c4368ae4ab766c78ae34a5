@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font: 14px "Open Sans", sans-serif;
+  margin-right: 6em;
+  margin-left: 6em;
+  margin-top: 5em;
+  background-color: #fefefe;
+}
+header {
+  display: block;
+  background: #f9f9f9;
+  vertical-align: middle;
+  padding-bottom: 4px;
+}
+header h1 {
+  display: block;
+  float: left;
+}
+header h1 a {
+  font-weight: bold;
+  font-size: 28px;
+  display: block;
+  width: 248px;
+  float: left;
+  border-top: 4px solid #eaeaea;
+  color: #565656;
+  text-decoration: none;
+  padding: 0px 16px;
+}
+header nav {
+  float: right;
+  vertical-align: middle;
+}
+header nav a {
+  padding-left: 0em;
+  margin-left: 0em;
+  margin-right: 2em;
+}
+li #index {
+  background-color: #ff0000;
+}
+ul.tec {
+  display: inline;
+  padding-left: 0em;
+  margin-left: 0em;
+  margin-right: 2em;
+  list-style-type: none;
+}
+div {
+  display: block;
+}
+div a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+div#pages {
+  float: right;
+  font-size: 18px;
+}
+div#header {
+  display: inline;
+  background: #f9f9f9;
+}
+div.exp,
+div.proj {
+  padding-left: 1em;
+}
+div.exp p,
+div.proj p {
+  margin-left: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #efefef;
+}
+div.exp div.single,
+div.proj div.single {
+  margin-left: 1em;
+  margin-top: 1em;
+  border-bottom: 1px solid #efefef;
+}
+div.exp span.title,
+div.proj span.title {
+  float: left;
+  font-weight: bold;
+  display: inline-block;
+}
+div.exp span.tenure,
+div.proj span.tenure {
+  float: right;
+}
+div.exp div.techno,
+div.proj div.techno {
+  display: inline-table;
+  margin: 1em auto;
+}
+h1 {
+  font: 42px "Open Sans", sans-serif;
+  font-style: bold;
+  display: inline;
+}
+.wrapper {
+  padding: 10px 2em;
+  background-color: white;
+}
+.techn {
+  font-size: 12px;
+  font-weight: bold;
+  background: #f9f9f9;
+  padding: 10px 30px;
+  text-align: left;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  display: inline-table;
+  vertical-align: middle;
+  line-height: 30px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 10px;
+}
+.techn span {
+  padding: 6px;
+  text-align: left;
+}
+p {
+  text-align: justify;
+  text-size: 14px;
+  font: "Open Sans", sans-serif;
+}
+form label {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+}
+form input#name,
+form input#email,
+form input#subject {
+  width: 300px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  font-size: 12px;
+}
+form textarea#message {
+  width: 300px;
+  height: 100px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 12px;
+}
+form input#submit {
+  display: block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  background-color: #f4f4f4;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -moz-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -ms-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f4f4f4, #e5e5e5);
+  background-image: linear-gradient(top, #f4f4f4, #e5e5e5);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f4f4f4, endColorstr=#e5e5e5);
+}
+form input#submit:hover {
+  cursor: pointer;
+  border: 1px solid #c1c1c1;
+  background-color: #dbdbdb;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dbdbdb), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -moz-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -ms-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: -o-linear-gradient(top, #dbdbdb, #cccccc);
+  background-image: linear-gradient(top, #dbdbdb, #cccccc);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#dbdbdb, endColorstr=#cccccc);
+}
+.flash {
+  color: #FF0000;
+  width: 400px;
+}
+footer {
+  width: 100%;
+  line-height: 4em;
+  min-height: 3em;
+  margin-top: 2em;
+  padding-right: 2em;
+  text-align: center;
+}
+tr div {
+  border: 1px solid white;
+}
+tr div:hover {
+  border: 1px solid #ccc;
+}
