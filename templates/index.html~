@@ -24,6 +24,6 @@
 
 		<p>I don't like the "workaholic" philosophy but I get work done when it needs to be done, responsible but with no high pressure. Being stressed worsens the quality of the work.</p>
 	
-		<p>If you want to navigate through the page, the <i>Résumé</i> and <i>Contact</i> pages are self-explainatory. The <i>Tech</i> page shows the technologies that I'm mostly knowledgeable about, and the <i>Projects</i> page shows some project I've done for college or in my spare time.</p>
+		<p>If you want to navigate through the page, the <b>Résumé</b> and <b>Contact</b> pages are self-explanatory. The <b>Tech</b> page shows the technologies that I'm mostly knowledgeable about, and the <b>Projects</b> page shows some work I've done for college or in my spare time.</p>
 	</div>
 	{% endblock -%}
