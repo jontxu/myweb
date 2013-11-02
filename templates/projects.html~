@@ -14,25 +14,25 @@
 
 <div id="about" class="projects">
  	<h2>Projects</h2>
-	<!--<div class="proj">-->
+	<div class="proj">
 		<div class="single">
 			<div><span class="title">Frugal</span> <span class="tenure">2013–present</span></div>
-			A web based personal accounting manager. It can be both self-hosted (for yourself) or for a community. A Knockback frontend (<u>Knock</u>out.js + <u>Back</u>bone.js) interacts with data from a MongoDB RESTful API. 
+			A web based personal accounting manager. Based in a single page approach to cater user friendliness. Can be self hosted or with users. Most likely powered by a mobile application that adds functionality and ubiquitousness.
 			<center> <div class="techno"><div class="sprite-img-python"></div> <div class="sprite-img-gunicorn"></div> <div class="sprite-img-flask"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-mongodb"></div> <div class="sprite-img-knockback"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-less"></div> <div class="sprite-img-git"></div></center>
 		</div>
 		<div class="single">
 			<div><a href="http://github.com/jontxu/labur"><div class="sprite-img-github"></div></a> <span class="title">Labur</span> <span class="tenure">2013–present</span></div>
-			A small URL shortener made for in python, with the data stored in CouchDB and manipulated via an ORM. 
+			A simple URL shortener service, with monitoring in the form of statistics, graphics and more to come.
 			<center> <div class="techno"><div class="sprite-img-python"></div> <div class="sprite-img-gunicorn"></div><div class="sprite-img-flask"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-redis"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-less"></div> <div class="sprite-img-gimp2"></div> <div class="sprite-img-git"></div></center>
 		</div>
 		<div class="single">
 			<div><a href="http://github.com/jontxu/fishbowl"><div class="sprite-img-github"></div></a> <span class="title">Fishbowl</span> <span class="tenure">2013–present</span></div>
-			A forum system made in node.js, with the data stored in PostgreSQL and manipulated via an ORM. It also has the feature of using Markdown as the marking language for the posts in general.
+			A forum system that makes posting simpler. Made as an alternative and the lack of this type of technology despite the fame Node.js and server-side Javascript have.
 			<center> <div class="techno"><div class="sprite-img-node"></div> <div class="sprite-img-postgresql"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-sass2"></div> <div class="sprite-img-compass"></div> <div class="sprite-img-git"></div></div></center>
 		</div>
 		<div class="single">
 			<div><a href="http://github.com/jontxu/myweb"><div class="sprite-img-github"></div></a> <span class="title"><a class="link" href="/">Personal website</span></a> <span class="tenure">Sep–Oct 2013</span></div>
-			The website you are looking right now is made in Python using the Flask web microfrawemork, running in the gunicorn web server and deployed on Heroku.
+			The website you are looking right now. Made multipage to study the power of web microframeworks. Hope you like it!
 			<center><div class="techno"> <div class="sprite-img-python"></div> <div class="sprite-img-gunicorn"></div><div class="sprite-img-flask"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-less"></div> <div class="sprite-img-gimp2"></div> <div class="sprite-img-git"></div></div></center>
 		</div>
 		<div class="single">
@@ -45,7 +45,7 @@
 			Mobile application for Android done in PhoneGap for the previously mentioned events held in Vitoria-Gasteiz, Spain from the 3rd to the 6th of december of 2012.
 			<center> <div class="techno"><div class="sprite-img-java"></div> <div class="sprite-img-apachecordova2"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-jquerymobile"></div> <div class="sprite-img-git"></div></div></center>
 		</div>
-	<!--</div>-->
+	</div>
 </div>
 
 
