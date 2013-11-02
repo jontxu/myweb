@@ -17,7 +17,7 @@
 	<div class="proj">
 		<div class="single">
 			<div><span class="title">Frugal</span> <span class="tenure">2013–present</span></div>
-			A web based personal accounting manager. Based in a single page approach to cater user friendliness. Can be self hosted or with users. Most likely powered by a mobile application that adds functionality and ubiquitousness.
+			A web based personal accounting manager. Based in a single page approach to cater user friendliness, it can be self hosted or with users. Most likely powered by a mobile application that adds functionality and ubiquitousness.
 			<center> <div class="techno"><div class="sprite-img-python"></div> <div class="sprite-img-gunicorn"></div> <div class="sprite-img-flask"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-mongodb"></div> <div class="sprite-img-knockback"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-less"></div> <div class="sprite-img-git"></div></center>
 		</div>
 		<div class="single">
@@ -32,7 +32,7 @@
 		</div>
 		<div class="single">
 			<div><a href="http://github.com/jontxu/myweb"><div class="sprite-img-github"></div></a> <span class="title"><a class="link" href="/">Personal website</span></a> <span class="tenure">Sep–Oct 2013</span></div>
-			The website you are looking right now. Made multipage to study the power of web microframeworks. Hope you like it!
+			The website you are looking right now. Made multipage to study the power of web microframeworks. I'm no web designer and good at visual arts so I kept it simple regarding colors. Hope you like it!
 			<center><div class="techno"> <div class="sprite-img-python"></div> <div class="sprite-img-gunicorn"></div><div class="sprite-img-flask"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-less"></div> <div class="sprite-img-gimp2"></div> <div class="sprite-img-git"></div></div></center>
 		</div>
 		<div class="single">
