@@ -14,11 +14,11 @@
 
 <div id="about" class="projects">
  	<h2>Projects</h2>
-	<div class="proj">
+	<!--<div class="proj">-->
 		<div class="single">
 			<div><span class="title">Frugal</span> <span class="tenure">2013–present</span></div>
 			A web based personal accounting manager. It can be both self-hosted (for yourself) or for a community. A Knockback frontend (<u>Knock</u>out.js + <u>Back</u>bone.js) interacts with data from a MongoDB RESTful API. 
-			<center> <div class="techno"><div class="sprite-img-python" title="python"></div> <div class="sprite-img-gunicorn"></div> <div class="sprite-img-flask"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-mongodb"></div> <div class="sprite-img-knockback"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-less"></div> <div class="sprite-img-git"></div></center>
+			<center> <div class="techno"><div class="sprite-img-python"></div> <div class="sprite-img-gunicorn"></div> <div class="sprite-img-flask"></div> <div class="sprite-img-jinja"></div> <div class="sprite-img-mongodb"></div> <div class="sprite-img-knockback"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-less"></div> <div class="sprite-img-git"></div></center>
 		</div>
 		<div class="single">
 			<div><a href="http://github.com/jontxu/labur"><div class="sprite-img-github"></div></a> <span class="title">Labur</span> <span class="tenure">2013–present</span></div>
@@ -45,7 +45,7 @@
 			Mobile application for Android done in PhoneGap for the previously mentioned events held in Vitoria-Gasteiz, Spain from the 3rd to the 6th of december of 2012.
 			<center> <div class="techno"><div class="sprite-img-java"></div> <div class="sprite-img-apachecordova2"></div> <div class="sprite-img-css"></div> <div class="sprite-img-html5"></div> <div class="sprite-img-js"></div> <div class="sprite-img-jquery"></div> <div class="sprite-img-jquerymobile"></div> <div class="sprite-img-git"></div></div></center>
 		</div>
-	</div>
+	<!--</div>-->
 </div>
 
 

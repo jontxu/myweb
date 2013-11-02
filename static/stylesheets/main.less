@@ -104,9 +104,8 @@ header {
   }
 }
 
-div.exp, div.proj {
+div.exp {
 	padding-left: 1em;
-	display: block;
 	div.single {
 		line-height: 22px;
 		text-align: justify;
@@ -119,6 +118,24 @@ div.exp, div.proj {
 			border-bottom: none;
 		}
 	}
+}
+
+div.proj {
+	div.single {
+		line-height: 22px;
+		text-align: justify;
+		margin-top: 1em;
+		padding-bottom: 1em;
+		border-bottom: 1px solid #eee;
+		
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+div.exp, div.proj {
+	display: block;
 	span.title {
 		vertical-align: middle;
 		font-weight: bold;
