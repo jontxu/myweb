@@ -13,7 +13,7 @@
 
 	{% block content -%}
 	<div id="about" class="wrapper">
-	 <h2>About</h2>
+	 <h2>About me</h2>
 	 	<img src="/static/images/fotoCV.jpg" class="photo" title="Circa november 2012" />
 	 	<center><h4>Disclaimer: not related to the <a href="http://en.wikipedia.com/wiki/Jon_Juaristi">homonymous writer</a></h4></center>
 		<p>Hi! I'm a 23 year old computer engineer that loves everything related with them. I'm a native of the <a href="http://en.wikipedia.org/wiki/Basque_Country_(greater_region)">Basque Country</a>, exactly from the town of <a href="http://goo.gl/maps/1n9Fm">Lekeitio</a>, in Biscay. Thus, I am a native speaker of both Basque and Spanish. I can also speak English fluently on an advanced level.</p>
@@ -23,10 +23,7 @@
 		<p>I am a self-educated person: I like studying by myself (it's hard but highly rewarding), looking at some technologies or knowledge that have either not seen on class or being key to pursue my career.</p>
 
 		<p>I don't like the "workaholic" philosophy but I get work done when it needs to be done, responsible but with no high pressure. Being stressed worsens the quality of the work.</p>
-
-		<p>I, as a computer engineer, also like to do some coding in my spare time. You can see some in my <a href="https://github.com/jontxu">Github</a> profile.</p>
-
-		<p>If you want to know more about me, press the tabs from the upper part of the page</p>
+	
+		<p>If you want to navigate through the page, the <i>Résumé</i> and <i>Contact</i> pages are self-explainatory. The <i>Tech</i> page shows the technologies that I'm mostly knowledgeable about, and the <i>Projects</i> page shows some project I've done for college or in my spare time.</p>
 	</div>
 	{% endblock -%}
-
