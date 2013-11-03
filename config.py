@@ -9,7 +9,7 @@ class Config(object):
 class Production(Config):
     DEBUG = True
     MAIL_PASSWORD = 'brem zeca tivu czzt'
-    LESS_BIN = './node_modules/less/bin/'
+    LESS_BIN = './node_modules/less/bin/lessc'
 
 class Development(Config):
     DEBUG = True
