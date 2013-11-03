@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Jon Juaristi Campillo — {% block title %} {% endblock %}</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Jon Juaristi Campillo">
+		<meta name="description" content="Jon Juaristi Campillo personal and professional webpage. Computer engineering gratuate from the University of Deusto.">
+		<meta name="keywords" content="Jon, Juaristi, Campillo, jjontx, jontxu, jonwho, jotilla22, jonjc, jontxojc, Python, C, C++, JavaScript, Java, PhoneGap, JQuery, HTML5, CSS3, Git, Node.js, Django, Flask, computer engineer, contact, tech, résumé, projects, data mining, computational science, artificial intelligence"> 
 		<link rel="stylesheet" type="text/css" href="/static/stylesheets/style.min.css">
 		<script type='text/javascript' src='/static/javascripts/all.min.js'></script>
 		{# {% assets "less" -%}
@@ -10,13 +13,14 @@
 		{% assets "js" -%}
 		<script type='text/javascript' src='{{ ASSET_URL }}'></script>
 		{% endassets -%} -#}
+		<title>Jon Juaristi Campillo — {% block title %} {% endblock %}</title>
 	</head>
-    <body>
-        <header>
-            <h1><a href="/">Jon Juaristi Campillo</a></h1>
-                {% block pages %} {% endblock %}
-        </header>
-        {% block content%} {% endblock %}
-        <footer> Powered by <a href="http://python.org/">Python</a> and <a href="http://flask.pocoo.org/">Flask</a> | Running with <a href="http://gunicorn.org/">gunicorn</a> | Hosted in <a href="http://heroku.com/">Heroku</a> | <abbr title="Copyleft">©</abbr> 2013 <a href="/">Jon Juaristi Campillo</a></footer>
-    </body>
+	<body>
+		<header>
+			<h1><a href="/">Jon Juaristi Campillo</a></h1>
+			{% block pages %} {% endblock %}
+		</header>
+		{% block content%} {% endblock %}
+		<footer> Powered by <a href="http://python.org/">Python</a> and <a href="http://flask.pocoo.org/">Flask</a> | Running with <a href="http://gunicorn.org/">gunicorn</a> | Hosted in <a href="http://heroku.com/">Heroku</a> | <abbr title="Copyleft">©</abbr> 2013 <a href="/">Jon Juaristi Campillo</a></footer>
+	</body>
 </html>
