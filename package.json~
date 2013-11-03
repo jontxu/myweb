@@ -6,10 +6,7 @@
     "npm": "1.2.12"
   },
   "private": true,
-  "scripts": {
-    "start": "node app"
-  },
   "dependencies": {
-    "less": "1.0.0"
+    "less: "*"
   }
 }
