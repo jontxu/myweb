@@ -2,8 +2,6 @@ venv
 *.pyc
 static/.webassets-cache
 static/stylesheets/img
-static/stylesheets/style.min.css
 static/stylesheets/output
-static/javascripts/all.min.js
 build
 
