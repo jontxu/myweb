@@ -5,6 +5,10 @@
     "node": "0.8.21",
     "npm": "1.2.12"
   },
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
   "dependencies": {
     "less: "*"
   }
