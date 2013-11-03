@@ -29,8 +29,9 @@ assets = Environment(app)
 assets.config['less_run_in_debug'] = False
 assets.url = app.static_url_path
 
-less = Bundle('stylesheets/main.less', 'stylesheets/img.less', filters='less,cssmin', output='stylesheets/style.min.css', extra={'rel': 'stylesheet/less' if assets.debug else 'stylesheet'})
-js = Bundle('javascripts/jquery.js', 'javascripts/html5shiv.js', 'http://lesscss.googlecode.com/files/less-1.3.0.min.js', filters='closure_js', output='javascripts/all.min.js')
+less = Bundle('stylesheets/main.less', 'stylesheets/img.less', filters='less,cssmin', output='stylesheets/style.min.css')
+js = Bundle('javascripts/jquery.js', 'javascripts/html5shiv.js', filters='closure_js', output='javascripts/all.min.js')
+
 assets.register('less', less)
 assets.register('js', js)
 
