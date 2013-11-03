@@ -26,7 +26,7 @@ else:
 mail.init_app(app)
 csrf.init_app(app)
 assets = Environment(app)
-assets.config['less_run_in_debug'] = False
+assets.config['less_run_in_debug'] = True
 assets.url = app.static_url_path
 
 less = Bundle('stylesheets/main.less', 'stylesheets/img.less', filters='less,cssmin', output='stylesheets/style.min.css')
