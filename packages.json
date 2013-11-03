@@ -6,6 +6,6 @@
     "npm": "1.2.12"
   },
   "dependencies": {
-    "less: "*"
+    "less": "*"
   }
 }
