@@ -20,6 +20,9 @@
 
 p {
   line-height: 22px; 
+  text-align: justify;
+  text-size: 14px;
+  font: @font-style;
 }
 
 abbr {
@@ -86,10 +89,10 @@ header {
       text-align: center;
       color: #333344;
       text-decoration: none;
-      &.current {
+      &.this {
         border-top: 4px solid #ddd;
       }
-      &.link {
+      &.page {
         border-top: 4px solid #ffffff;
         &:hover {
           border-top: 4px solid #2980b9;
@@ -103,6 +106,18 @@ header {
     }
   }
 }
+
+footer {
+  width: 100%;
+  font-size: 11px;
+  line-height: 4em;
+  min-height: 3em;
+  margin-top: 1em;
+  //padding-right: 2em;
+  text-align: center;
+  border-top: solid 1px #ddd;
+}
+
 
 div.exp {
 	padding-left: 1em;
@@ -238,12 +253,6 @@ img.photo {
   display: inline-block;
 }
 
-p {
-	text-align: justify;
-	text-size: 14px;
-	font: @font-style;
-}
-
 form label {
   font-size: @font-size;
   font-weight: bold;
@@ -312,16 +321,4 @@ form input#submit:hover{
   color: #FF0000;
   width: 400px;
   font-size:12px;
-}
-
-footer {
-  width: 100%;
-  font-size: 11px;
-  line-height: 4em;
-  min-height: 3em;
-  margin-top: 1em;
-  padding-right: 2em;
-  text-align: center;
-  border-top: solid 1px #ddd;
-  
 }

@@ -3,10 +3,10 @@
 
 	{% block pages %}
 			<nav>
-				<a class="link" href="{{ url_for('resume') }}">Résumé</a>
-				<a class="link"  href="{{ url_for('tech') }}">Tech</a>
-				<a class="current" href="{{ url_for('projects') }}">Projects</a>
-				<a class="link" href="{{ url_for('contact') }}">Contact</a>
+				<a class="page" href="{{ url_for('resume') }}">Résumé</a>
+				<a class="page" href="{{ url_for('tech') }}">Tech</a>
+				<a class="this" href="{{ url_for('projects') }}">Projects</a>
+				<a class="page" href="{{ url_for('contact') }}">Contact</a>
 			</nav>
 	{% endblock %}
 
