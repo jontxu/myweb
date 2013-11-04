@@ -60,13 +60,17 @@ header, body {
   header {
     width: 50%;
     h1 {
-      width: 100%;
+      width: auto;
     }
     a {
-      width: 100%;
+      width: auto;
     }
   }
-}
+  .contact {
+    padding: 10px 2em;
+    display: block;
+    overflow: hidden;
+  }
 
 @media screen and (mid-width:1000px) and (max-width:500px) {
   body, footer {
@@ -75,18 +79,22 @@ header, body {
   header {
     width: 50%;
     h1 {
-      height: 56px;
-      width: 100%;
+      width: auto;
     }
     a {
-      width: 100%;
+      width: auto;
     }
+  }
+  .contact {
+    padding: 10px 2em;
+    display: block;
+    overflow: hidden;
   }
 }
 
 @media screen and (max-width:500px) {
   body, footer {
-    width: auto;
+    width: 100&;
   }
   header {
     width: 50%;
@@ -96,6 +104,11 @@ header, body {
     a {
       width: auto;
     }
+  }
+  .contact {
+    padding: 10px 2em;
+    display: block;
+    overflow: hidden;
   }
 }
 
