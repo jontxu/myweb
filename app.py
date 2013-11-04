@@ -51,9 +51,9 @@ def index():
 def resume():
 	return render_template('resume.html', title=u'R\xe9sum\xe9')
 
-@app.route('/projects/')
-def projects():
-	return render_template('projects.html', title='Projects')
+@app.route('/coding/')
+def coding():
+	return render_template('coding.html', title='Coding')
 
 @app.route('/skills/')
 def skill():

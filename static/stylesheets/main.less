@@ -210,6 +210,14 @@ footer {
 div.exp {
 	padding-left: 1em;
 	div.single {
+      span.title {
+        font-weight: bold;
+        display: inline-block;
+      }
+      span.tenure {
+        float: right;
+        display: inline-block;
+      }
 		line-height: 22px;
 		text-align: justify;
 		margin-left: 1em;
@@ -225,12 +233,27 @@ div.exp {
 
 div.proj {
 	div.single {
+    div {
+      .sprite-img-github {
+        vertical-align: middle;
+      }
+      span.title {
+        vertical-align: middle;
+        font-weight: bold;
+        display: inline;
+      }
+      span.tenure {
+        padding-top: 2px;
+        vertical-align: middle;
+        float: right;
+        display: inline-block;
+   }
+    }
 		line-height: 22px;
 		text-align: justify;
 		margin-top: 1em;
 		padding-bottom: 1em;
 		border-bottom: 1px solid #eee;
-		
 		&:last-child {
 			border-bottom: none;
 		}
@@ -239,18 +262,12 @@ div.proj {
 
 div.exp, div.proj {
 	display: block;
-	span.title {
-		vertical-align: middle;
-		font-weight: bold;
-		display: inline-block;
-	}
-	span.tenure {
-		float: right;
-	}
-	div.techno {
-		display: inline-table;
-		margin-top: 1em;
-	}
+  div.single {
+	 div.techno {
+		  display: inline-table;
+		  margin-top: 1em;
+	 }
+  }
 }
 
 img.photo {
@@ -325,6 +342,7 @@ img.photo {
           border-radius: 10px;
    span {
       width: 90px;
+      vertical-align: middle;
       text-align: center;
       display: inline-block;
       margin: auto;
