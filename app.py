@@ -55,9 +55,9 @@ def resume():
 def projects():
 	return render_template('projects.html', title='Projects')
 
-@app.route('/tech/')
-def tech():
-	return render_template('tech.html', title='Technologies')
+@app.route('/skills/')
+def skill():
+	return render_template('skills.html', title='Skills')
 
 @app.route('/contact/', methods=['GET', 'POST'])
 def contact():
