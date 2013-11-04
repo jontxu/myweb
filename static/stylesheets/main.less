@@ -1,14 +1,10 @@
 @font-style: "Lato", sans-serif;
-//@font-style: "Source Sans Pro", sans-serif;
-//@font-style: "Open Sans", sans-serif;
 @margin: 6em;
 @padding: 10px;
 @form-border: 1px solid #cccccc;
 @font-size: 13px;
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
-//@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
-//@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 * {
   margin: 0px;
@@ -31,7 +27,6 @@ abbr {
 	border-bottom: 1px dotted;
 	&[title]:hover::after {
 		cursor: help;
-		//content: " (" attr(title) ") ";
 		border-bottom: 1px dotted #ffffff;
 	}
 }
@@ -54,8 +49,9 @@ header, body {
 }
 
 @media screen and (mid-width : 1000px) {
- body, footer {
+ body, footer, header {
     width: auto;
+    margin: auto;
   }
   header {
     width: auto;
@@ -81,8 +77,9 @@ header, body {
 }
 
 @media screen and (mid-width : 1000px) and (max-width : 500px) {
-  body, footer {
+  body, footer, header {
     width: auto;
+    margin: auto;
   }
   header {
     width: auto;
@@ -110,6 +107,7 @@ header, body {
 @media screen and (max-width : 480px) {
   body, footer {
     width: auto;
+    margin: auto;
   }
   header {
     width: auto;
