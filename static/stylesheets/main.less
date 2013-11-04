@@ -54,10 +54,11 @@ header, body {
 }
 
 @media screen and (mid-width:1000px) {
-  header, body, footer {
+  body, footer {
     width: 100%;
   }
   header {
+    width: 50%;
     h1 {
       width: 100%;
     }
@@ -68,11 +69,13 @@ header, body {
 }
 
 @media screen and (mid-width:1000px) and (max-width:500px) {
-  header, body, footer {
+  body, footer {
     width: 100%;
   }
   header {
+    width: 50%;
     h1 {
+      height: 56px;
       width: 100%;
     }
     a {
@@ -82,10 +85,11 @@ header, body {
 }
 
 @media screen and (max-width:500px) {
-  header, body, footer {
+  body, footer {
     width: auto;
   }
   header {
+    width: 50%;
     h1 {
       width: auto;
     }
@@ -100,7 +104,6 @@ header, body {
 }
 
 header {
-  //background-color: #f9f9f9;
   height: 56px;
   line-height: 56px;
   margin-top: 32px;
@@ -307,7 +310,8 @@ form label {
 form input#name,
 form input#email,
 form input#subject {
-  width: 300px;
+  //width: 300px;
+  width: 80%;
   background-color: #fafafa;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
@@ -318,7 +322,8 @@ form input#subject {
 }
  
 form textarea#message {
-  width: 300px;
+  //width: 300px;
+  width: 80%;
   height: 100px;
   background-color: #fafafa;
   -webkit-border-radius: 3px;
