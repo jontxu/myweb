@@ -100,25 +100,27 @@ header {
 }
 
 @media screen and (max-width : 1000px) and (min-width : 500px) {
-   body, footer {
+   body, header {
+    display: block;
     width: auto;
-    margin: auto;
+    margin: 0px auto;
+    margin-bottom: 16px; 
   }
   header {
-  height: 56px;
-  line-height: 56px;
+  height: 30px;
+  line-height: 30px;
   margin-top: 32px;
   vertical-align: middle;
   padding-bottom: 4px;
   h1 {
     display: block;
     float: left;
-    width: 100px;
+    width: 40%;
     a {
       font-weight: bold;
-      font-size: 14px;
+      font-size: 22px;
       display: block;
-      width: 100px;
+      width: auto;
       float: left;
       border-top: 4px solid #ffffff;
       color: #565656;
@@ -128,12 +130,12 @@ header {
   }
     nav {
       float: right;
-      width: auto;
+      width: 60%;
       a {
-        font-size: 14px;
+        font-size: 20px;
         display: block;
         float: left;
-        width: auto;
+        width: 25%;
         text-align: center;
         color: #333344;
         text-decoration: none;
@@ -143,25 +145,27 @@ header {
 }
 
 @media screen and (max-width : 500px) {
-  body, footer, header {
+ body, header {
+    display: block;
     width: auto;
-    margin: auto;
+    margin: 0px auto;
+    margin-bottom: 16px; 
   }
   header {
-  height: 56px;
-  line-height: 56px;
+  height: 30px;
+  line-height: 30px;
   margin-top: 32px;
   vertical-align: middle;
   padding-bottom: 4px;
   h1 {
     display: block;
     float: left;
-    width: 400px;
+    width: 40%;
     a {
       font-weight: bold;
-      font-size: 24px;
+      font-size: 14px;
       display: block;
-      width: 400px;
+      width: auto;
       float: left;
       border-top: 4px solid #ffffff;
       color: #565656;
@@ -169,34 +173,20 @@ header {
       padding: 0px 16px;
     }
   }
-  nav {
-    float: right;
-    width: 400px;
-     a {
-      font-size: 18px;
-      display: block;
-      float: left;
-      width: 100px;
-      text-align: center;
-      color: #333344;
-      text-decoration: none;
-      &.this {
-        border-top: 4px solid #ddd;
-      }
-      &.page {
-        border-top: 4px solid #ffffff;
-        &:hover {
-          border-top: 4px solid #2980b9;
-          -webkit-transition: all 0.2s ease-in-out;
-          -moz-transition: all 0.2s ease-in-out;
-          -ms-transition: all 0.2s ease-in-out;
-          -o-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
-        }
+    nav {
+      float: right;
+      width: 60%;
+      a {
+        font-size: 13px;
+        display: block;
+        float: left;
+        width: 25%;
+        text-align: center;
+        color: #333344;
+        text-decoration: none;
       }
     }
   }
-}
 }
 
 .clear {
