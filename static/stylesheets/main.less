@@ -12,7 +12,8 @@
 
 * {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
   h2, h3, h4, p {
 	margin-bottom: 16px; 
@@ -44,11 +45,30 @@ body {
     text-decoration: none;
   }
 }
+
 header, body {
   display: block;
   width: 800px;
   margin: 0px auto;
   margin-bottom: 16px; 
+}
+
+@media screen and (mid-width:1000px) {
+  header, body {
+    width: auto;
+  }
+}
+
+@media screen and (mid-width:1000px) and (max-width:500px) {
+  header, body {
+    width: auto;
+  }
+}
+
+@media screen and (max-width:500px) {
+  header, body {
+    width: auto;
+  }
 }
 
 .clear {
